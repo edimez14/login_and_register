@@ -7,7 +7,7 @@ import axios from 'axios';
 is creating an Axios instance named `usersApi`. This instance is configured with a base URL of
 "https://login-and-register-wrn2.onrender.com/api/v1/". */
 const usersApi = axios.create({
-	baseURL: "https://login-and-register-wrn2.onrender.com/api/v1/",
+	baseURL: "https://localhost:8000/login/api/v1/",
 })
 
 /**
