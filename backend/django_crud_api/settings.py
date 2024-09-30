@@ -12,10 +12,7 @@ https://docs.djangoproject.com/en/5.1/ref/settings/
 
 from pathlib import Path
 import os
-from dotenv import load_dotenv
 import dj_database_url
-
-load_dotenv()
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -31,11 +28,7 @@ SECRET_KEY = 'django-insecure-5e^b(7$oz9_5q-@*by8b@6)c17_7#$-19zd&y$z420%^6g$p#8
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-<<<<<<< HEAD
-ALLOWED_HOSTS = ["*"]
-=======
 ALLOWED_HOSTS = []
->>>>>>> develop
 
 # Application definition
 
@@ -90,17 +83,8 @@ WSGI_APPLICATION = 'django_crud_api.wsgi.application'
 
 DATABASES = {
     'default': {
-<<<<<<< HEAD
-        "ENGINE": "django.db.backends.postgresql",
-        "NAME": os.getenv("DB_NAME"),
-        "USER": os.getenv("DB_USER"),
-        "PASSWORD": os.getenv("DB_PWD"),
-        "HOST": os.getenv("DB_HOST"),
-        "PORT": os.getenv("DB_PORT"),
-=======
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
->>>>>>> develop
     }
 }
 
@@ -139,11 +123,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
 
-<<<<<<< HEAD
-STATIC_URL = '/static/'
-=======
 STATIC_URL = 'static/'
->>>>>>> develop
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
@@ -151,12 +131,7 @@ STATIC_URL = 'static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # cors authorization
-<<<<<<< HEAD
-CORS_ALLOWED_ORIGINS = True
-CORS_ALLOWS_CREDENTIALS = True
-=======
 CORS_ALLOWED_ORIGINS = ["http://localhost:5371", ]
->>>>>>> develop
 
 REST_FRAMEWORK = {
     "DEFAULT_SCHEMA_CLASS": "rest_framework.schemas.coreapi.AutoSchema",
