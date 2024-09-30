@@ -19,7 +19,7 @@ const accessToken = auth.access_token;*/
 
 
 const usersApi = axios.create({
-	baseURL: "https://87eb86a0-e8e6-4dbd-b145-d44aa213613b-dev.e1-us-east-azure.choreoapis.dev/loginandregister/backend/v1/",
+	baseURL: "https://87eb86a0-e8e6-4dbd-b145-d44aa213613b-dev.e1-us-east-azure.choreoapis.dev/loginandregister/backend/v1/login/api/v1/",
 	timeout: 10000,
 })
 
