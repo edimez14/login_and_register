@@ -7,7 +7,7 @@ import axios from 'axios';
 is creating an Axios instance named `usersApi`. This instance is configured with a base URL of
 "/choreo-apis/loginandregister/backend/v1/". */
 const usersApi = axios.create({
-	baseURL: "/choreo-apis/loginandregister/backend/v1/",
+	baseURL: "/choreo-apis/loginandregister/backend/v1/api/v1/",
 })
 
 /**
