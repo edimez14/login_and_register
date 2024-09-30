@@ -1,13 +1,25 @@
 /* This JavaScript code snippet is setting up an Axios instance called `usersApi` with a base URL of
 "/choreo-apis/loginandregister/backend/v1/". It then defines several functions to interact with an API for
 user authentication and registration. */
+/*import oauth from 'axios-oauth-client'*/
 import axios from 'axios';
 
 /* The code snippet `const usersApi = axios.create({baseURL: "/choreo-apis/loginandregister/backend/v1/",})`
 is creating an Axios instance named `usersApi`. This instance is configured with a base URL of
 "/choreo-apis/loginandregister/backend/v1/". */
+/*
+const getClientCredentials = oauth.clientCredentials(
+  axios.create(),
+  <tokenUrl>,
+  <consumerKey>,
+  <consumerSecret>
+);
+const auth = await getClientCredentials();
+const accessToken = auth.access_token;*/
+
+
 const usersApi = axios.create({
-	baseURL: "/choreo-apis/loginandregister/backend/v1/api/v1/",
+	baseURL: "https://87eb86a0-e8e6-4dbd-b145-d44aa213613b-dev.e1-us-east-azure.choreoapis.dev/loginandregister/backend/v1/",
 })
 
 /**
