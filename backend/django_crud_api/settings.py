@@ -142,7 +142,10 @@ if not DEBUG:
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # cors authorization
-CORS_ALLOWED_ORIGINS = True
+# CORS_ALLOWED_ORIGINS = True
+CORS_ALLOWED_ORIGINS = [
+    "https://login-and-register-chi.vercel.app",
+]
 
 REST_FRAMEWORK = {
     "DEFAULT_SCHEMA_CLASS": "rest_framework.schemas.coreapi.AutoSchema",
