@@ -23,7 +23,7 @@ class Migration(migrations.Migration):
         migrations.AddField(
             model_name='login',
             name='numberPhone',
-            field=models.CharField(default='SinNombre', max_length=7),
+            field=models.CharField(default='SinNombre', max_length=10),
         ),
         migrations.AddField(
             model_name='login',
