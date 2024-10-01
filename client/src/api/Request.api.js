@@ -3,11 +3,11 @@
 user authentication and registration. */
 import axios from 'axios';
 
-/* The code snippet `const usersApi = axios.create({baseURL: "https://login-and-register-wrn2.onrender.com/api/v1/",})`
+/* The code snippet `const usersApi = axios.create({baseURL: "https://login-and-register-9724.onrender.com/login/api/v1/",})`
 is creating an Axios instance named `usersApi`. This instance is configured with a base URL of
-"https://login-and-register-wrn2.onrender.com/api/v1/". */
+"https://login-and-register-9724.onrender.com/login/api/v1/". */
 const usersApi = axios.create({
-	baseURL: "http://localhost:8000/login/api/v1/",
+	baseURL: "https://login-and-register-9724.onrender.com/login/api/v1/",
 })
 
 /**
