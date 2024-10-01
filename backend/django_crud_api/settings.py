@@ -87,6 +87,7 @@ WSGI_APPLICATION = 'django_crud_api.wsgi.application'
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
 
 DATABASES = {
+    'ENGINE': 'django.db.backends.postgresql',
     'default': dj_database_url.config(conn_max_age=600, ssl_require=True)
 }
 
